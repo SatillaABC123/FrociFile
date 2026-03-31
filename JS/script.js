@@ -1,4 +1,3 @@
-
 const BG_MUSIC_ENABLED_KEY = 'seedFile.bgMusicEnabled';
 const BG_MUSIC_TIME_KEY = 'seedFile.bgMusicTime';
 const BG_MUSIC_VOLUME_KEY = 'seedFile.bgMusicVolume';
@@ -143,15 +142,15 @@ if (presetGrid && dialButton && dialMarker && dialUp && dialDown) {
   const sourceMedia = [
     ...Array.from({ length: 17 }, (_, index) => ({
       type: 'video',
-      src: `../MEDIA/videos/video-${String(index + 1).padStart(2, '0')}.mp4`
+      src: `MEDIA/videos/video-${String(index + 1).padStart(2, '0')}.mp4`
     })),
     ...Array.from({ length: 12 }, (_, index) => ({
       type: 'image',
-      src: `../MEDIA/images/image-${String(index + 1).padStart(2, '0')}.jpeg`
+      src: `MEDIA/images/image-${String(index + 1).padStart(2, '0')}.jpeg`
     })),
     ...Array.from({ length: 3 }, (_, index) => ({
       type: 'audio',
-      src: `../MEDIA/audio/audio-${String(index + 1).padStart(2, '0')}.ogg`
+      src: `MEDIA/audio/audio-${String(index + 1).padStart(2, '0')}.ogg`
     }))
   ];
 
