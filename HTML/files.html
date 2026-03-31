@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I Froci File | Feral Files</title>
+  <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <main class="radio-page vintage-page">
+    <section class="archive-header compact-header">
+      <p class="warning">Recovered Transmission</p>
+      <h1>I Froci File</h1>
+      <p class="subtitle">A damaged old receiver keeps pulling in strange channels.</p>
+    </section>
+
+    <section class="vintage-radio unique-radio" aria-label="Old horror radio television">
+      <div class="radio-frame-inner">
+        <div class="upper-face">
+          <div class="crt-shell media-side">
+            <div id="channelBadge" class="channel-badge">CH 1</div>
+            <div id="mediaTypeBadge" class="media-type-badge"></div>
+            <div class="screen-cap"></div>
+
+            <div class="video-frame crt-frame">
+              <video id="channelVideo" class="channel-video" playsinline preload="metadata"></video>
+              <img id="channelImage" class="channel-image hidden" alt="Recovered archive frame" />
+              <audio id="channelAudio" preload="metadata"></audio>
+
+              <div id="audioTransmissionCard" class="audio-transmission-card hidden">
+                <div class="audio-transmission-inner">
+                  <p class="audio-mini">RECOVERED SIGNAL</p>
+                  <h3 id="audioTransmissionTitle">Channel</h3>
+                  <p id="audioTransmissionMeta">Recovered signal.</p>
+                </div>
+              </div>
+
+              <div id="liveFx" class="live-fx" aria-hidden="true">
+                <canvas id="idleStaticCanvas" class="idle-static-canvas"></canvas>
+                <div class="live-bars"></div>
+                <div class="live-scan-jump"></div>
+                <div id="whiteFlash" class="white-flash"></div>
+              </div>
+
+              <div id="tuningFx" class="tuning-fx" aria-hidden="true">
+                <canvas id="staticCanvas" class="static-canvas"></canvas>
+                <div class="tuning-rgbbars"></div>
+                <div class="tuning-noise"></div>
+                <div class="tuning-tear"></div>
+                <div class="tuning-text">TUNING...</div>
+              </div>
+
+              <div id="videoOverlay" class="video-overlay">
+                <div class="overlay-inner old-overlay">
+                  <p class="overlay-small">Signal unstable</p>
+                  <h2 id="channelTitle">Channel 01</h2>
+                  <p id="channelMeta">Your archive files have been loaded into the receiver.</p>
+                </div>
+              </div>
+              <div class="crt-vignette"></div>
+              <div class="crt-scanlines"></div>
+              <div class="screen-glow"></div>
+            </div>
+          </div>
+
+          <aside class="speaker-side" aria-hidden="true">
+            <div class="speaker-title">FERAL FILES</div>
+            <div class="speaker-subtitle">ARCHIVE RECEIVER</div>
+            <div class="speaker-grill"></div>
+            <div class="speaker-meter">
+              <span>Signal</span>
+              <div class="meter-bars">
+                <i></i><i></i><i></i><i></i><i></i>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="radio-console">
+          <div class="console-row brand-row">
+            <div class="brand-left">FERAL FILES</div>
+
+            <div class="on-air-box">
+              <span class="on-air-light"></span>
+              <span>ARCHIVE FEED</span>
+            </div>
+
+            <div class="console-controls">
+              <button class="mini-button" type="button" aria-label="Power decorative button">⏻</button>
+              <button id="randomButton" class="mini-button wide random-button" type="button" aria-label="Open a random signal">RND</button>
+
+              <div class="knob-block">
+                <div class="knob-label">Vol</div>
+                <button id="volumeKnob" class="round-knob decorative-knob" type="button" aria-label="Volume knob"></button>
+              </div>
+
+              <div class="knob-block tuner-block">
+                <div class="knob-label">Tune</div>
+                <button id="dialButton" class="round-knob tuner-knob" type="button" aria-label="Channel tuning wheel">
+                  <span class="dial-core"></span>
+                  <span class="dial-marker"></span>
+                </button>
+                <button id="dialDown" class="tune-step tune-left" type="button" aria-label="Previous channel bank">‹</button>
+                <button id="dialUp" class="tune-step tune-right" type="button" aria-label="Next channel bank">›</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="console-row keypad-shell">
+            <div id="presetGrid" class="preset-grid old-preset-grid"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="radio-bottom-strip">
+        <div class="status-pack">
+          <div class="status-item">
+            <span class="readout-label">Bank</span>
+            <strong id="bankLabel">1 / 1</strong>
+          </div>
+          <div class="status-item">
+            <span class="readout-label">Current</span>
+            <strong id="currentChannel">01</strong>
+          </div>
+          <div class="status-item">
+            <span class="readout-label">Status</span>
+            <strong id="channelStatus">Idle</strong>
+          </div>
+          <div class="status-item">
+            <span class="readout-label">Audio</span>
+            <strong id="audioStatus">Ready</strong>
+          </div>
+        </div>
+
+        <a href="index.html" class="back-link small-link">Back</a>
+      </div>
+    </section>
+  </main>
+
+  <audio id="globalBgMusic" class="global-bg-music" loop preload="auto">
+    <source src="../MEDIA/audio/bg-music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="../JS/script.js"></script>
+</body>
+</html>
